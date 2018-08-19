@@ -1,0 +1,542 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+  padding-left: 15em;
+  padding-right: 15em;
+  color: #000;
+  font-size: 10px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+  height: 45px;
+  text-align: center;
+}
+nav ul{
+  padding-left: 0;
+}
+header li{
+  display: inline-block;
+  width: 10%;
+  font-size: 1.5em;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.applyButton{
+  border: 1px solid black;
+  background: rgb(50, 57, 66);
+  width: 8em;
+  display: inline-block;
+  color: white;
+}
+main{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  background: rgb(241, 243, 245);
+  height: 32em;
+}
+main img{
+  display: inline-block;
+  width: 16em;
+  margin-left: 27em;
+  margin-top: 3em;
+}
+main h1{
+  font-size: 2em;
+  font-weight: lighter;
+  margin-left: 3em;
+}
+main p{
+  margin-left: 6em;
+  width: 27em;
+  margin-top: -1em;
+}
+main h4{
+  margin-left: 6em;
+  font-weight: lighter;
+  margin-top: 4em;
+  margin-bottom: 7px;
+}
+main input[type=email]{
+  display: inline-block;
+  width: 27em;
+  margin-left: 6em;
+  height: 28px;
+}
+.submitButton{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 8em;
+  height: 28px;
+  text-align: center;
+  padding-top: 3px;
+  background: rgb(182, 197, 208);
+  color: white;
+  font-weight: lighter;
+  font-size: 1.3em;
+  border-radius: .3em;
+  margin-left: 2.5%;
+}
+.about{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-top: 32px;
+}
+.aboutHeader{
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-top: 2.5em;
+  width: 86%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.bold{
+  font-weight: bold;
+}
+.aboutLeftText{
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding-left: 4em;
+}
+.aboutRightText{
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding-right: 4em;
+  margin-bottom: 3em;
+}
+.aboutInnerP{
+  display: block;
+  width: 78%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  border-top: 1px solid red;
+}
+.aboutP{
+  text-align: center;
+  width: 50%;
+  font-style: italic;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+.history{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 4%;
+  background: rgb(241, 243, 245);
+  padding-left: 9%;
+}
+
+.history span{
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.history p{
+  display: inline-block;
+  float: left;
+  width: 60%;
+}
+.historyImgOne{
+  display: inline-block;
+  float: right;
+  margin-top: -186px;
+  margin-right: 54px;
+  width: 12em;
+  filter: grayscale(1);
+}
+.historyImgTwo{
+  display: inline-block;
+  float: right;
+  margin-top: -50px;
+  width: 12em;
+  margin-right: 54px;
+  filter: grayscale(1);
+}
+.whoAreWe{
+  padding: 8px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.whoAreWe > span{
+  display: block;
+  margin-bottom: 17px;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-top: 14px;
+}
+.founder{
+  border: 1px solid gray;
+  display: inline-block;
+  width: 85%;
+
+}
+.founder img{
+  display: inline-block;
+  width: 174px;
+  float: left;
+  padding: 1.5%;
+  filter: grayscale(1);
+}
+.founder span{
+  display: inline-block;
+  float: left;
+  margin-top: 34px;
+  margin-left: 47px;
+  font-size: 1.3em;
+}
+.founder p{
+  display: inline-block;
+  float: left;
+  width: 70%;
+  margin-top: 14px;
+  margin-left: 49px;
+  text-align: initial;
+  font-style: italic;
+  font-size: .9em;
+}
+.associates{
+  display: inline-block;
+  text-align: initial;
+  padding: 20px;
+}
+.foundation{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding-left: 58px;
+}
+.simmons{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding-right: 67px;
+}
+.associates h1{
+  font-weight: lighter;
+  padding-left: 15px;
+}
+.associates p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.newsletter{
+  display: inline-block;
+  width: 100%;
+  background: rgb(178, 193, 205);
+  padding: 11px;
+  float: left;
+}
+.newsletter span{
+  display: inline-block;
+  font-size: 1.5em;
+  float: left;
+  width: 264px;
+  color: white;
+  padding-top: .2%;
+  margin-left: 13%;
+}
+.newsletter input[type=email]{
+  display: inline-block;
+  width: 28em;
+  margin-left: -5em;
+  height: 28px;
+}
+footer{
+  display: inline-block;
+  background: rgb(139, 154, 161);
+  width: 100%;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+.copyright{
+  border-bottom: 1px solid white;
+  display: inline-block;
+  color: white;
+  width: 100%;
+}
+.copyright h5{
+  display: inline-block;
+  font-size: 1em;
+  font-weight: lighter;
+  float: left;
+}
+.none{
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  color: white;
+  padding-top: 1.5%;
+  margin-right: 2%;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+.footerNav{
+  display: inline-block;
+  width: 100%;
+}
+.footerNav ul{
+  display: inline-block;
+  float: left;
+  padding: 0;
+  width: 14%;
+}
+.footerNav a{
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 1200px){
+  .founder span{
+    display: inline-block;
+    float: left;
+    margin-top: 175px;
+    margin-left: -157px;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+  }
+  .founder p{
+    width: 50%;
+    margin-top: 19px;
+  }
+  header li{
+    width: 8%;
+    font-size: 1.2em;
+  }
+  .newsletter span{
+    margin-left: 2%;
+    width: 25%;
+  }
+  .newsletter input[type=email]{
+    margin-left: 0;
+    width: 40%;
+  }
+  .none{
+    font-size: 1em;
+    padding-top: 2.5%;
+  }
+  .hamburgerWhite{
+    float: right;
+    color: white;
+    margin-top: 2%;
+    font-size: 2em;
+    margin-right: 6%;
+  }
+  .hamburgerBlack{
+    color: black;
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1024px) {
+  header li{
+    font-size: 1em;
+  }
+}
+@media (max-width: 900px) {
+  body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px){
+  footer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main img{
+    margin-left: 6em;
+  }
+  .copyright{
+    padding-left: 2%;
+  }
+  .footerNav{
+    padding-left: 2%;
+  }
+}
+@media (max-width: 691px) {
+  .footerNav{
+    display: none;
+  }
+  header li{
+    display: none;
+  }
+  .none{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .aboutHeader{
+    font-size: 1.5em;
+  }
+  .aboutInnerP{
+    font-size: 1em;
+  }
+  .history p{
+    font-size: .8em;
+  }
+  .historyImgOne{
+    margin-top: -153px;
+    width: 9em;
+  }
+  .historyImgTwo{
+    margin-top: -45px;
+    width: 9em;
+  }
+  .associates h1{
+    font-size: 1.2em;
+  }
+  .associates p{
+    font-size: .8em;
+  }
+  .founder{
+    width: 85%;
+  }
+  .founder img{
+    width: 106px;
+  }
+  .founder span{
+    margin-top: 109px;
+    margin-left: -97px;
+    font-size: .7em;
+    padding-bottom: 5px;
+    padding-right: 30px;
+  }
+  .founder p{
+    width: 82%;
+    margin-top: 14px;
+    margin-left: 49px;
+    text-align: initial;
+    font-style: italic;
+    font-size: 1em;
+    display: block;
+    float: none;
+    margin-left: 8px;
+  }
+  .foundation{
+    padding-left: 0;
+  }
+  .simmons{
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main img{
+    width: 6em;
+    margin: 2em;
+  }
+  main h1{
+    margin-left: 1em;
+    font-size: 1.5em;
+  }
+  main p{
+    margin-left: 1.5em;
+    width: 54%;
+    margin-top: 0;
+  }
+  main h4{
+    margin-left: 1.5em;
+    font-size: .8em;
+  }
+  main input[type=email]{
+    width: 40%;
+    margin-left: 1.5em;
+  }
+  .aboutHeader{
+    font-size: 1em;
+    padding-top: 8px;
+  }
+  .aboutLeftText{
+    margin-bottom: 21px;
+    margin-top: 19px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .aboutRightText{
+    width: 100%;
+    padding-right: 0;
+  }
+  .aboutInnerP{
+    font-size: .8em;
+    width: 51%;
+  }
+  .aboutP{
+    width: 76%;
+    font-size: .8em;
+  }
+  .historyImgOne{
+    display: none;
+  }
+  .historyImgTwo{
+    display: none;
+  }
+  .history p{
+    width: 100%;
+  }
+  .foundation{
+    width: 100%;
+  }
+  .simmons{
+    width: 100%;
+  }
+  .newsletter span{
+    font-size: .9em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center the container */
